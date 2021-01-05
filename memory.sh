@@ -1,3 +1,3 @@
 #!/bin/sh
 
-free -h | sed -n 2p | awk '{printf "Mem %s\n", $3}'
+free -h | sed -n 2p | awk '{printf "mem %s\n", $3}'

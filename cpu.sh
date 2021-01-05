@@ -1,3 +1,3 @@
 #!/bin/sh
 
-mpstat | sed -n 4p | awk '{printf "CPU %.2f%%\n", (100-$13)}'
+awk '{printf "load %.2f %.2f %.2f\n", $1, $2, $3}' /proc/loadavg
